@@ -12,9 +12,8 @@ const IconButton = ({ src, type }) => {
     dispatch(setToolType(type));
   };
 
-  console.log(selectedToolType);
-
   return (
+    // selectedToolType === 'RECTANGLE'
     <button className={selectedToolType === type ? "menu_button_active" : "menu_button"} onClick={handleToolChange}>
       <img width="80%" height="80%" src={src} alt="rectangleIcon" />
     </button>
