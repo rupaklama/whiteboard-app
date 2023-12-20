@@ -22,8 +22,11 @@ const whiteboardSlice = createSlice({
         // update element
       }
     },
+    setElements: (state, action) => {
+      state.elements = action.payload;
+    },
   },
 });
 
-export const { setToolType, updateElement } = whiteboardSlice.actions;
+export const { setToolType, updateElement, setElements } = whiteboardSlice.actions;
 export default whiteboardSlice.reducer;
