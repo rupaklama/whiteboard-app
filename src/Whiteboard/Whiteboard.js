@@ -78,7 +78,6 @@ const Whiteboard = () => {
     if (selectedElementIndex !== -1) {
       if (action === actions.DRAWING) {
         if (adjustmentRequired(elements[selectedElementIndex].type)) {
-          console.log("resizing is active now!");
           const { x1, y1, x2, y2 } = adjustElementCoordinates(elements[selectedElementIndex]);
 
           updateCurrentElement(

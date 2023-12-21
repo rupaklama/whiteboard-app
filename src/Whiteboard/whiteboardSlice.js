@@ -20,6 +20,7 @@ const whiteboardSlice = createSlice({
         state.elements.push(action.payload);
       } else {
         // update element
+        state.elements[index] = action.payload;
       }
     },
     setElements: (state, action) => {
